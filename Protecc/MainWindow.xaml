@@ -1,0 +1,31 @@
+﻿<Window x:Class="Protecc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Protecc"
+        mc:Ignorable="d"
+        Title="Totally Not Malware" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Topmost="True" ShowInTaskbar="False" WindowStyle="ThreeDBorderWindow" Icon="image_preview_MV2_icon.ico">
+    <Grid Height="220" Width="550">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="93"/>
+            <RowDefinition/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="117.5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="resources/img2.png" Grid.RowSpan="3" Height="220" Width="220"/>
+        <TextBox x:Name="Form_Code" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="10,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Row="1"/>
+        <Label Content="Card number:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Height="26" Width="98" Grid.Row="1"/>
+        <Button Content="Submit" Grid.Column="2" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="75" Height="20" Grid.Row="2" Padding="0" Click="Button_Click"/>
+        <Label Content="Expiry date:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="26" Width="98" Grid.Row="1"/>
+        <Label Content="Security code:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="26" Width="98" Grid.Row="1"/>
+        <TextBox x:Name="Form_Date" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="10,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Row="1"/>
+        <TextBox x:Name="Form_Nr" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Row="1"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="73" Margin="10,10,0,0" TextWrapping="Wrap" Text="Grrrrrrr raaaaa&#xD;&#xA;grrrr&#xD;&#xA;mmmhmm" VerticalAlignment="Top" Width="310" Grid.ColumnSpan="2" IsReadOnly="True" FontSize="16"/>
+
+    </Grid>
+</Window>
